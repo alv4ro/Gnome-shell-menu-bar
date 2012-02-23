@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Gnome-shell bar position (gsBar)
+Name[es]=Cambiar posición barra gnome-shell (gsBar)
+Exec=sh /usr/share/gsbar/gsbar.sh
+Icon=/usr/share/pixmaps/gsbar_icon.png
+Terminal=false
+Type=Application
+Categories=System;
+StartupNotify=true
