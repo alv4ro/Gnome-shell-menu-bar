@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Gnome-shell bar position (gsBar)
-Name[es]=Cambiar posición barra gnome-shell (gsBar)
+Name=Menu bar preferences (gsBar)
+Name[es]=Preferencias de la barra de menú (gsBar)
 Exec=sh /usr/share/gsbar/gsbar.sh
 Icon=/usr/share/pixmaps/gsbar_icon.png
 Terminal=false
