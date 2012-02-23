@@ -17,7 +17,6 @@ NO_REFLEXION=`echo $STRING_UP | sed 's/.\(.*\)/\1/'`
 
 if [ $ACT = "yes" ];then
     VALUE="[$NO_REFLEXION]"
-    #TODO zenity message to change or cancel
     if zenity --question --title="Barra de menú de Gnome-shell" --width=350 --text="¿Cambiar la barra de menú a la parte superior de la pantalla?"; then
         gsettings set org.gnome.shell enabled-extensions "$VALUE"
         gnome-shell --replace &
@@ -25,9 +24,7 @@ if [ $ACT = "yes" ];then
 
 else
     VALUE="[$NO_REFLEXION,$REFLEXION]"
-    #TODO zenity message to change or cancel
     if zenity --question --title="Barra de menú de Gnome-shell" --width=350 --text="¿Cambiar la barra de menú a la \nparte inferior de la pantalla?"; then
         gsettings set org.gnome.shell enabled-extensions "$VALUE"
-        gnome-shell --replace &
     fi
 fi
